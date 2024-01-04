@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mia-Care Docs',
-  tagline: 'Dinosaurs are cool',
+  title: 'Mia-Care Documentation',
+  tagline: 'Learn how Mia-Care can unlock the power of digital health',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -86,49 +86,133 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+        style: "dark",
+        links: [{
+          title: "Mia-Platform",
+          items: [{
+            label: "How to install",
+            to: "/docs/info/how_to_install",
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            label: "Bug Policy",
+            to: "/docs/info/bug_policy",
           },
           {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+            label: "Supported browsers",
+            to: "/docs/info/supported_browser",
           },
+          {
+            label: "Open Source Software",
+            to: "/docs/info/oss",
+          },
+          {
+            label: "Subprocessor",
+            to: "/docs/info/subprocessor",
+          },
+          {
+            label: "Service Level Agreement",
+            to: "/docs/info/mia_service_level_agreement",
+          },
+          {
+            label: "Audit Process",
+            to: "/docs/info/audit_process",
+          },
+          ],
+        },
+        {
+          title: "Company",
+          items: [{
+            label: "Website",
+            href: "https://mia-platform.eu",
+          },
+          {
+            label: "About",
+            href: "https://mia-platform.eu/company/about-us/",
+          },
+          {
+            label: "Mission & Vision",
+            href: "https://mia-platform.eu/mission-vision/",
+          },
+          {
+            label: "Blog",
+            href: "https://mia-platform.eu/blog/",
+          },
+          {
+            label: "Events",
+            href: "https://mia-platform.eu/resources/events/",
+          },
+          {
+            label: "Privacy Policy",
+            href: "https://mia-platform.eu/img/Privacy_Policy_Website_EN.pdf",
+          },
+          ],
+        },
+        {
+          title: "Core Platform",
+          items: [{
+            label: "Mia-Platform Console",
+            href: "https://mia-platform.eu/platform/console/",
+          },
+          {
+            label: "Mia-Platform Marketplace",
+            href: "https://mia-platform.eu/platform/mia-platform-marketplace/",
+          },
+          {
+            label: "Mia-Platform Fast Data",
+            href: "https://mia-platform.eu/platform/console/fast-data",
+          },
+          {
+            label: "Release Notes",
+            to: "/docs/release-notes/versions",
+          },
+          ],
+        },
+        {
+          title: "Developer Resources",
+          items: [{
+            label: "Status Page",
+            href: "https://status.console.cloud.mia-platform.eu"
+          },
+          {
+            label: "Guidelines",
+            to: "/docs/getting-started/guidelines/",
+          },
+          {
+            label: "Library",
+            href: "https://resources.mia-platform.eu/en/library",
+          },
+          {
+            label: "GitHub",
+            href: "https://github.com/mia-platform",
+          },
+          {
+            label: "GitHub Marketplace",
+            href: "https://github.com/mia-platform-marketplace",
+          },
+          ],
+        },
+        {
+          title: "Education & Support",
+          items: [{
+            label: 'Support',
+            href: 'https://makeitapp.atlassian.net/servicedesk/customer/portal/21'
+          },
+          {
+            label: "Community",
+            to: "https://github.com/mia-platform/community/discussions",
+          },
+          {
+            label: 'FAQ',
+            to: '/docs/getting-started/faqs'
+          },
+          {
+            label: "Getting Started",
+            to: "/docs/getting-started/mia-platform-overview",
+          },
+          ],
+        },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Mia srl. All rights reserved. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
